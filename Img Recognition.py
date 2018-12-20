@@ -14,12 +14,14 @@ clf.fit(xtrain,train_label)
 xtest = data[21000:,1:]
 actual_label = data[21000:,0]
 
+#For image prediction
 d = xtest[10]
 d.shape = (28,28)
 pt.imshow(255-d,cmap='gray')
 print(clf.predict([xtest[10]]))
 pt.show()
 
+#For accuracy testing
 p = clf.predict(xtest)
 count = 0
 for i in range(0,21000):
