@@ -3,7 +3,7 @@ import matplotlib.pyplot as pt
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 
-data = pd.read_csv("C:/Users/user/Desktop/Image Recognition/Resources/train.csv").values
+data = pd.read_csv(".../Resources/train.csv").values
 clf = DecisionTreeClassifier()
 
 xtrain = data[0:21000,1:]
