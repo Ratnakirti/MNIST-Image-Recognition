@@ -26,4 +26,4 @@ p = clf.predict(xtest)
 count = 0
 for i in range(0,21000):
     count+=1 if p[i]==actual_label[i] else 0
-print("Accuracy = ", (count/21000)*10)
+print("Accuracy = ", (count/21000)*100)
